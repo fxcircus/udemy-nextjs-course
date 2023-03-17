@@ -1,5 +1,6 @@
 import Link from "next/link"
 import classes from './EventItem.module.css'
+import Button from '../ui/Button'
 
 export default function (props) {
     const { id, title, image, date, location} = props
@@ -24,7 +25,7 @@ export default function (props) {
             </div>
         </div>
         <div className={classes.action}>
-            <Link href={exploreLink}>Explore Link</Link>
+            <Button link={exploreLink}>Explore</Button>
         </div>
       </li>
     )
