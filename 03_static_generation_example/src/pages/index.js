@@ -20,5 +20,7 @@ export async function getStaticProps() {
 
   return { props: {
     products: data.products
-  } }
+    },
+    revalidate: 120 // Incremental static generation every 120 seconds at most
+  }
 }
